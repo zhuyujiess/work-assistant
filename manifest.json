@@ -4,6 +4,13 @@
     "version": "1.0",
     "description": "a tools for the convenience of your daily work",
     "permissions": ["activeTab", "declarativeContent", "storage"],
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+    "chrome_url_overrides": {
+        "newtab": "tab.html"
+     },
     "icons": {
         "16": "images/get_started16.png",
         "32": "images/get_started32.png",
@@ -17,7 +24,7 @@
           "48": "images/get_started48.png",
           "128": "images/get_started128.png"
         },
-        "default_title": "work assistant",
-        "default_popup": "popup.html"
+        "default_title": "work assistant"
+       // "default_popup": "popup.html"
     }
 }
